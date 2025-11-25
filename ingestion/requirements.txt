@@ -1,0 +1,7 @@
+kafka-python
+requests
+python-dotenv
+tweepy
+boto3
+minio
+google-api-python-client
