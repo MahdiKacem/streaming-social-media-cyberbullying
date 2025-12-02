@@ -5,7 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY youtube_ingestion.py .
+COPY kafka_consumer.py .
 
-CMD ["python3", "-u", "youtube_ingestion.py"]
-
+CMD ["python3","-u", "kafka_consumer.py"]
